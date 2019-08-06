@@ -3,13 +3,63 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
+    <style>
+      body{
+        background: url('https://img.freepik.com/free-vector/blue-abstract-acrylic-brush-stroke-textured-background_53876-86373.jpg?size=626&ext=jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      table{
+        background: linear-gradient(to bottom right, dodgerblue, tomato);
+        border: 2px solid white;
+        color: white;
+        border-collapse: collapse;
+      }
+      td{
+        border: 2px solid white;
+        text-align: center;
+        padding: 20px;
+      }
+      *{
+        font-family: 'Calibri'
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
-
+    <h1>Navjot Singh</h1>
+    <p>Computer Programmer</p>
+    <table style="width:100%">
+      <tr>
+        <th>Couse Name</th>
+        <th>Code</th> 
+        <th>GPA</th>
+      </tr>
+      <tr>
+        <td>Web Technology</td>
+        <td>CSD 3343</td> 
+        <td>3.5</td>
+      </tr>
+      <tr>
+        <td>Web Technology</td>
+        <td>CSD 3343</td> 
+        <td>3.5</td>
+      </tr>
+      <tr>
+        <td>Web Technology</td>
+        <td>CSD 3343</td> 
+        <td>3.5</td>
+      </tr>
+    </table>
+    <form action="/action_page.php">
+      First name:<br>
+      <input type="text" name="firstname" value="Mickey">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname" value="Mouse">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form> 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>
